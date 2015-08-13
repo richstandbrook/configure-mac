@@ -1,10 +1,19 @@
 Color_Off='\033[0m'; Red='\033[0;31m'; Yellow='\033[0;33m'
 
+echo "${Red}- CONFIGURE MAC -${Color_Off}"
+echo "Change shell to zsh…"
+
+chsh -s /bin/zsh
+
+echo "Install oh-my-zsh…"
+
+curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
+
 echo "Install homebrew…"
 
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-echo "Done; Install cask…"
+echo "Install cask…"
 
 brew install caskroom/cask/brew-cask
 
