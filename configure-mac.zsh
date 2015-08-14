@@ -26,6 +26,8 @@ brew cask install kaleidoscope
 brew cask install transmit
 brew cask install paw
 
+brew cask install virtualbox
+brew cask install vagrant
 brew cask install dockertoolbox
 
 brew cask install private-eye
